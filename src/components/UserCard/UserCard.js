@@ -1,7 +1,7 @@
 
 import React from 'react';
-import ProfileDescription from './ProfileDescription';
-import StatsList from './StatsList';
+import ProfileDescription from '../ProfileDescription/ProfileDescription';
+import ProfileStatistics from '../ProfileStatistics/ProfileStatistics';
 import userData from './user.json';
 
 
@@ -17,7 +17,7 @@ const UserCard = () => {
           />
 
 
-          <StatsList
+          <ProfileStatistics
             followers={userData.stats.followers}
             views={userData.stats.views}
             likes={userData.stats.likes}

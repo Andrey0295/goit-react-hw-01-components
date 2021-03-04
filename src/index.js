@@ -6,7 +6,7 @@
 // import './index.css';
 // import App from './App';
 // import reportWebVitals from './reportWebVitals';
-// import 'modern-normalize/modern-normalize.css';
+import 'modern-normalize/modern-normalize.css';
 
 
 import React from 'react';

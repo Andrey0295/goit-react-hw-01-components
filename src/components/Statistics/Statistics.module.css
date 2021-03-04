@@ -1,0 +1,45 @@
+
+
+
+.statisticsBlock {
+
+    background-color: antiquewhite;
+    width: 500px;
+
+    /* margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px; */
+    margin: 50px auto ;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.title {
+    background-color: burlywood;
+
+    width: 250px;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.statisticsList {
+    list-style: none;
+    padding: 0;
+    display: flex;
+
+}
+
+.statisticsItem {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+
+    border: 2px solid red;
+}

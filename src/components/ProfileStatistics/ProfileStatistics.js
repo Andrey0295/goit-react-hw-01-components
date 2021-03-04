@@ -1,13 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import styles from './ProfileStatistics.module.css';
 
 
 
 
-  const StatsList = ({followers, views, likes}) => {
+
+  const ProfileStatistics = ({followers, views, likes}) => {
     return (
-      <ul className="stats">
+      <ul className={styles.statisticsBlock}>
         <li>
           <span className="label">Followers: </span>
           <span className="quantity">{followers}</span>
@@ -25,13 +27,13 @@ import PropTypes from 'prop-types';
     )
   }
 
-  StatsList.propTypes = {
+  ProfileStatistics.propTypes = {
     followers: PropTypes.number,
     views: PropTypes.number,
     likes: PropTypes.number,
   }
 
-  StatsList.defaultProps = {
+  ProfileStatistics.defaultProps = {
 
     followers: "-",
     views: "-",
@@ -41,6 +43,6 @@ import PropTypes from 'prop-types';
 
 
 
-  export default StatsList;
+  export default ProfileStatistics;
 
 

@@ -1,10 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import styles from './ProfileDescription.module.css';
+
 
 const ProfileDescription = ({name, tag, avatar, location}) => {
     return (
-        <div className="description">
+        <div className={styles.descriptionBlock}>
             <img
                src={avatar}
                alt="Аватар пользователя"
@@ -12,7 +14,7 @@ const ProfileDescription = ({name, tag, avatar, location}) => {
                width="280"
                />
                <p className="name">{name}</p>
-               <p className="tag">@{tag}</p>
+               <p className={styles.tag}>@{tag}</p>
                <p className="location">{location}</p>
 
         </div>
