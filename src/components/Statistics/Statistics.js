@@ -12,17 +12,18 @@ const Statistics = ({title, stats}) => {
         <section className={styles.statisticsBlock}>
           {title && <h2 className={styles.title}>{title}</h2>}
           <ul className={styles.statisticsList}> 
+
+              {
+                  stats.map(({id, label, percentage}) => (
+                      <StatisticsItem
+                      key={id}
+                      
+                      label={label}
+                      percentage={percentage}
+                      />
+                  ))
+              }
             
-            {stats.map((statItem) => (
-
-                <li key={statItem.id} className={styles.statisticsItem}>
-                     <StatisticsItem
-                     label={statItem.label}
-                     percentage={statItem.percentage}
-                     />
-                </li>
-
-                 ) ) }   
             </ul>     
         </section>
     )
@@ -30,6 +31,10 @@ const Statistics = ({title, stats}) => {
 
 Statistics.propTypes = {
     title: PropTypes.string,
+    stats: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.string.isRequired
+    }))
 
 }
 

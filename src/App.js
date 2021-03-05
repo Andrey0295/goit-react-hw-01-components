@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from 'react' ;
+
 import UserCard from './components/UserCard/UserCard';
 import Statistics from './components/Statistics/Statistics';
 import FriendList from './components/FriendList/FriendList';
@@ -29,11 +30,7 @@ const App = () => {
 
             </Container>
 
-            {/* <UserCard/>
-            <Statistics
-            title="Upload stats"
-            stats={statisticalData}
-            /> */}
+            
             
         </>
     )
