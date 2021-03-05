@@ -1,0 +1,27 @@
+table{
+    
+    margin: 50px auto;
+
+    width: 600px;
+    text-align: center;
+   
+}
+
+thead{
+    background-color: lightcoral;
+      
+}
+
+tbody{
+    color: blue;
+    
+}
+td{
+    background-color: antiquewhite;
+    
+   
+}
+
+td:nth-child(even) {
+    background-color: lightgrey;
+    }
