@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React from 'react' ;
+import React from 'react';
 
 import UserCard from './components/UserCard/UserCard';
 import Statistics from './components/Statistics/Statistics';
@@ -11,36 +11,20 @@ import statisticalData from './components/Statistics/statistical-data.json';
 import friendsData from './components/FriendList/friendsData';
 import transactionItem from './components/TransactionHistory/transaction.json';
 
-
-
-
-
-
-
-
-
 const App = () => {
-    return (
-        <>
-            <Container>
-              <UserCard/>
+  return (
+    <>
+      <Container>
+        <UserCard />
 
-              <Statistics
-              title="Upload stats"
-              stats={statisticalData}
-              />
-              <FriendList
-              friends={friendsData}/>
+        <Statistics title="Upload stats" stats={statisticalData} />
 
-              <TransactionHistory
-              items={transactionItem}/>
+        <FriendList friends={friendsData} />
 
-            </Container>
-
-            
-            
-        </>
-    )
-}
+        <TransactionHistory items={transactionItem} />
+      </Container>
+    </>
+  );
+};
 
 export default App;

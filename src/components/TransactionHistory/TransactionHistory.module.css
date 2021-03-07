@@ -1,27 +1,21 @@
-table{
-    
-    margin: 50px auto;
+table {
+  margin: 50px auto;
 
-    width: 600px;
-    text-align: center;
-   
+  width: 600px;
+  text-align: center;
 }
 
-thead{
-    background-color: lightcoral;
-      
+thead {
+  background-color: lightcoral;
 }
 
-tbody{
-    color: blue;
-    
+tbody {
+  color: blue;
 }
-td{
-    background-color: antiquewhite;
-    
-   
+td {
+  background-color: antiquewhite;
 }
 
 td:nth-child(even) {
-    background-color: lightgrey;
-    }
+  background-color: lightgrey;
+}
